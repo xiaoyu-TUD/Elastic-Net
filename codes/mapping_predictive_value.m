@@ -19,7 +19,7 @@ AA(eye(size(AA))~=0) = 0;
 
 load('E:\IFC\upload_github\common_index.mat')%%load common features'index
 for i = 1:length(common_index)
-    [x,y] = find(aa(i)==AA);
+    [x,y] = find(common_index(i)==AA);
     x_cell(i) = x(1); 
     y_cell(i) = y(1);
 end
